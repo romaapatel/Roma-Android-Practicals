@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">AndroidOverview</string>
+    <string name="other">Other</string>
+    <string name="welcome_to_simform">%s Welcome To Simform</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="enter_email">Enter Your Email</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="select_hobbies">Select Hobbies</string>
+    <string name="dancing">Dancing</string>
+    <string name="painting">Painting</string>
+    <string name="singing">Singing</string>
+    <string name="reading">Reading</string>
+    <string name="submit">Submit</string>
+    <string name="show_custom_toast">Show Custom Toast</string>
+    <string name="no_image_warning">No Image</string>
+    <string name="your_email_is">Your email is</string>
+    <string name="chapter_2a">Chapter 3(A)</string>
 </resources>
