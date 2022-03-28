@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkblue"
+    android:background="@color/dark_blue"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
@@ -12,11 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_56sdp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/ripple_effect_button"
         android:text="@string/chapter_2a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChapterC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ripple_effect_button"
+        android:text="@string/chapter_3_C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChapterA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
