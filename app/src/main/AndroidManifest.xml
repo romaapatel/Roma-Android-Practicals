@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidOverview">
         <activity
+            android:name=".LayoutExampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUPActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationFormActivity"
             android:exported="false" />
         <activity

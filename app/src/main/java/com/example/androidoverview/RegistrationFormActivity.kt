@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_registration_form.rgGender
 import kotlinx.android.synthetic.main.activity_registration_form.toggleButton
 
 class RegistrationFormActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration_form)

@@ -1,8 +1,59 @@
 <resources>
     <string name="app_name">AndroidOverview</string>
+    <string-array name="city_list">
+        <item>Ahmedabad</item>
+        <item>Surat</item>
+        <item>Rajkot</item>
+        <item>Vadodara</item>
+        <item>Anand</item>
+        <item>Bharuch</item>
+        <item>Bhavnagar</item>
+        <item>Dahod</item>
+        <item>Gir Somnath</item>
+        <item>Junagadh</item>
+        <item>Navsari</item>
+    </string-array>
+    <string name="no_image">No image</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="enter_full_name">Enter Your Full Name</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_password">* * * * *</string>
+    <string name="enter_contact_no">Enter Contact Number</string>
+    <string name="choose_city">Choose City</string>
+    <string name="enter_area">Enter Area Name</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="submit_form">Submit Your Form</string>
+    <string name="login">Login</string>
+    <string name="account_login">Account Login</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_to_instagram">Welcome to Instagram</string>
+    <string name="feedback">FeedBack</string>
+    <string name="linear_example">Linear Layout Example</string>
+    <string name="frame_example">Frame Layout Example</string>
+    <string name="feedback_details">FeedBack Details</string>
+    <string name="i_agree">I Agree</string>
+    <string name="relative_example">Relative Layout Example</string>
+    <string name="merge_button">Merge Button</string>
+    <string name="include_exmaple">Include Example</string>
+    <string name="table_example">Table Layout Example</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="image_view">Image Of Heroine</string>
+    <string name="movie_title">Beauty and the Beast</string>
+    <string name="movie_details">March 2017 PG 129 minutes</string>
+    <string name="rent_movie">RENT FROM R29.99</string>
+    <string name="buy_movie">BUY FROM R127,99</string>
+    <string name="tomato_fab">Tomato</string>
+    <string name="similar_fab">Similar</string>
+    <string name="rating_number">4.5 Rating</string>
+    <string name="family">Family</string>
+    <string name="rating">71</string>
+    <string name="movie_description">The story and characters you know and love come to spectacular life in the live-action adaption of Disney\'s animated classic Beauty and the Beast</string>
     <string name="other">Other</string>
     <string name="welcome_to_simform">%s Welcome To Simform</string>
-    <string name="registration_form">Registration Form</string>
     <string name="enter_name">Enter Your Name</string>
     <string name="enter_email">Enter Your Email</string>
     <string name="select_gender">Select Gender</string>
@@ -19,4 +70,14 @@
     <string name="no_image_warning">No Image</string>
     <string name="your_email_is">Your email is</string>
     <string name="chapter_2a">Chapter 3(A)</string>
+    <string name="chapter_2b">Chapter 3(B)</string>
+    <string name="constraint_layout">Constraint Layout Example</string>
+    <string name="table_layout">Table Layout Example</string>
+    <string name="time">Time</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="show_time">Show time</string>
+    <string name="email">Email</string>
+    <string name="instagram_title">Instagram</string>
+    <string name="custom_toast">Custom Toast</string>
 </resources>
