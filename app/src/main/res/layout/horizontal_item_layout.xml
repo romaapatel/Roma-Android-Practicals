@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/light_grey">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageMovie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:contentDescription="@string/no_image_warning"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_email_24"/>
+
+        <LinearLayout
+            android:id="@+id/layoutMovieDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tvMovieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/movie_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMovieDetails"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="3"
+                android:text="@string/movie_detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

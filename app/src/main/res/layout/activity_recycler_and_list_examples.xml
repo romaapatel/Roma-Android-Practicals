@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:background="@drawable/ripple_effect_button"
         android:text="@string/recycler_view_exmaple"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:background="@drawable/ripple_effect_button"
         android:text="@string/list_view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:background="@drawable/ripple_effect_button"
         android:text="@string/whatsapp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,10 +48,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:background="@drawable/ripple_effect_button"
         android:text="@string/fragment_example"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnWhatsapp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/ripple_effect_button"
+        android:text="@string/horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnViewPager" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/ripple_effect_button"
+        android:text="@string/expandable_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHorizontal" />
 </androidx.constraintlayout.widget.ConstraintLayout>

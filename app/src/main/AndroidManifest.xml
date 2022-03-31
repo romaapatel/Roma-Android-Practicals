@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidOverview">
         <activity
+            android:name=".ExpandableListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalVerticalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewPagerActivity"
             android:exported="false" />
         <activity

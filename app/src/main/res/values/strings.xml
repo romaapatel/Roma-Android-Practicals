@@ -42,4 +42,8 @@
     <string name="fragment_example">Fragment Example</string>
     <string name="home">Home</string>
     <string name="favorites">Favorites</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="expandable_view">Expandable List Example</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="movie_detail">Movie Details</string>
 </resources>

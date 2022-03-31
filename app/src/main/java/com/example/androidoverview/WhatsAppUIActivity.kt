@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_whats_app_uiactivity.tabLayout
 import kotlinx.android.synthetic.main.activity_whats_app_uiactivity.whatsappViewPager
 
 class WhatsAppUIActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_whats_app_uiactivity)
@@ -33,10 +34,9 @@ class WhatsAppUIActivity : AppCompatActivity() {
                     tab.text = getString(R.string.calls_ui)
                 }
             }
-
-
         }
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main,menu)
         return super.onCreateOptionsMenu(menu)

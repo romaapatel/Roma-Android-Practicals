@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_view_pager.tabLayout
 import kotlinx.android.synthetic.main.activity_view_pager.viewPager
 
 class ViewPagerActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_pager)
@@ -29,7 +30,6 @@ class ViewPagerActivity : AppCompatActivity() {
                 }
             }
         }.attach()
-
 
         bottomNav.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
