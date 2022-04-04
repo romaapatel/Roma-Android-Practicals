@@ -14,7 +14,6 @@
         <item>Navsari</item>
     </string-array>
     <string name="no_image">No image</string>
-    <string name="registration_form">Registration Form</string>
     <string name="enter_full_name">Enter Your Full Name</string>
     <string name="enter_your_email">Enter Your Email</string>
     <string name="enter_password">* * * * *</string>
@@ -54,6 +53,7 @@
     <string name="movie_description">The story and characters you know and love come to spectacular life in the live-action adaption of Disney\'s animated classic Beauty and the Beast</string>
     <string name="other">Other</string>
     <string name="welcome_to_simform">%s Welcome To Simform</string>
+    <string name="registration_form">Registration Form</string>
     <string name="enter_name">Enter Your Name</string>
     <string name="enter_email">Enter Your Email</string>
     <string name="select_gender">Select Gender</string>
@@ -80,4 +80,20 @@
     <string name="email">Email</string>
     <string name="instagram_title">Instagram</string>
     <string name="custom_toast">Custom Toast</string>
+    <string name="chapter_2d">Chapter 2(D)</string>
+    <string name="implicit_intent_example">Implicit Intent Example</string>
+    <string name="enter_url">Enter URl</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_message">Enter Message to Share</string>
+    <string name="enter_number">Enter Number to Call</string>
+    <string name="intent_with_data_passing">Intent with data Passing</string>
+    <string name="first_name">First Name</string>
+    <string name="rules_text">Rules</string>
+    <string name="about_us">About Us</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="fragment_example_with_data">Fragment Example with passing data and replace fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_game">Welcome to Game</string>
+    <string name="start_game">Start Game</string>
 </resources>

@@ -3,8 +3,10 @@ package com.example.androidoverview
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.androidoverview.intentexample.IntentAndFragmentActivity
 import kotlinx.android.synthetic.main.activity_main.btnChapterA
 import kotlinx.android.synthetic.main.activity_main.btnChapterB
+import kotlinx.android.synthetic.main.activity_main.btnChapterD
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btnChapterA.setOnClickListener {
             val intent = Intent(this,RegistrationFormActivity::class.java)
+            startActivity(intent)
+        }
+        btnChapterD.setOnClickListener {
+            val intent = Intent(this, IntentAndFragmentActivity::class.java)
             startActivity(intent)
         }
         btnChapterB.setOnClickListener{

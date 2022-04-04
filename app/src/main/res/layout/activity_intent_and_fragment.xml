@@ -5,40 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
-    tools:context=".MainActivity">
-
-       <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnChapterA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_56sdp"
-        android:background="@drawable/ripple_effect_button"
-        android:text="@string/chapter_2a"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".intentexample.IntentAndFragmentActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnChapterB"
+        android:id="@+id/btnImplicitIntentExample"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_56sdp"
         android:background="@drawable/ripple_effect_button"
-        android:text="@string/chapter_2b"
-        app:layout_constraintTop_toBottomOf="@id/btnChapterA" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnChapterD"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_56sdp"
-        android:background="@drawable/ripple_effect_button"
-        android:text="@string/chapter_2d"
+        android:text="@string/implicit_intent_example"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnChapterB"/>
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnIntentwithDataPassing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:background="@drawable/ripple_effect_button"
+        android:text="@string/intent_with_data_passing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnImplicitIntentExample"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFragmentWithData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:background="@drawable/ripple_effect_button"
+        android:text="@string/fragment_example_with_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnIntentwithDataPassing"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
