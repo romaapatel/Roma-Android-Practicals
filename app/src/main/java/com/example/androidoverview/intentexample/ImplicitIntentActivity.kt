@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidoverview.R
+import com.example.androidoverview.utils.Constant
 import kotlinx.android.synthetic.main.activity_implicit_intent.btnCall
 import kotlinx.android.synthetic.main.activity_implicit_intent.btnLocation
 import kotlinx.android.synthetic.main.activity_implicit_intent.btnMessage
@@ -39,7 +40,7 @@ class ImplicitIntentActivity : AppCompatActivity() {
     }
 
     private fun getLocation() {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=" + etLocation.text.toString()))
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(Constant.LOCATION + etLocation.text.toString()))
         startActivity(intent)
     }
 
@@ -47,12 +48,12 @@ class ImplicitIntentActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_SEND)
         intent.putExtra( Intent.EXTRA_TEXT,etMessage.text.toString())
         intent.type = "text/plain"
-        startActivity(Intent.createChooser(intent,"Share Via"))
+        startActivity(Intent.createChooser(intent,Constant.SHARE_VIA))
     }
 
     private fun doCall() {
        val dialIntent = Intent(Intent.ACTION_DIAL)
-        dialIntent.data = Uri.parse("tel:"+ etCall.text.toString())
+        dialIntent.data = Uri.parse(Constant.TEL+ etCall.text.toString())
         startActivity(dialIntent)
     }
 }

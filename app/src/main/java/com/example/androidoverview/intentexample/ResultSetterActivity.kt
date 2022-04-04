@@ -14,20 +14,14 @@ class ResultSetterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result_setter)
 
-        val firstName =  intent.extras?.get("firstName")
+        val firstName =  intent.extras?.get(R.string.first_name.toString())
 
         firstName.let{ tvIntentFirstName.text = firstName.toString() }
-//        if (firstName != null) {
-//            tvIntentFirstName.text = firstName.toString()
-//        }
-
         btnLastName.setOnClickListener {
             val intent = Intent(this, ResultIntentActivity::class.java)
-            intent.putExtra("lastName",etIntentLastName.text.toString())
-            intent.putExtra("firstName", tvIntentFirstName.text.toString())
+            intent.putExtra(R.string.last_name.toString(),etIntentLastName.text.toString())
+            intent.putExtra(R.string.first_name.toString(), tvIntentFirstName.text.toString())
             startActivity(intent)
-//            setResult(RESULT_OK, intent)
-//            super.onBackPressed()
         }
     }
 }

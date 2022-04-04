@@ -9,6 +9,7 @@ import android.widget.RadioButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.androidoverview.R
+import com.example.androidoverview.utils.Constant
 import kotlinx.android.synthetic.main.fragment_game_actitvity.view.btnqustionSubmit
 import kotlinx.android.synthetic.main.fragment_game_actitvity.view.rgOptions
 import kotlinx.android.synthetic.main.fragment_game_actitvity.view.tvFragmentScore
@@ -20,41 +21,36 @@ class GameFragmentActivity : Fragment() {
 
     private val viewModel: ScoreViewModel by activityViewModels()
     private lateinit var questions: MutableList<QuestionModelClass>
-    var counter = 0
-    var score = 0
+    var counter = Constant.ZERO
+    var score = Constant.ZERO
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_game_actitvity, container, false)
-
         questions = ArrayList()
-
         questions.add(
             QuestionModelClass(
-                " What is ART?",
-                arrayOf("Android Reaction Time", "Android Run Tool", "Android Run Time", "None"),
-                "Android Run Time"
+                R.string.what_is_art.toString(),
+                arrayOf(R.string.android_reaction_time.toString(), R.string.android_run_time.toString(),R.string.android_run_tool.toString(),R.string.none.toString()),
+                R.string.android_run_time.toString()
             )
         )
         questions.add(
             QuestionModelClass(
-                " What is Android?",
-                arrayOf("Android Reaction Time", "Android Run Tool", "Android", "None"),
-                "Android"
+                R.string.what_is_android.toString(),
+                arrayOf(R.string.android_reaction_time.toString(),R.string.android_run_tool.toString(),R.string.none.toString(),R.string.android.toString() ),
+                R.string.android.toString()
             )
         )
 
         updateQuestion(view)
-
         view.btnqustionSubmit.setOnClickListener {
             checkQuestion(view.rgOptions.checkedRadioButtonId.toString())
             counter++
             updateQuestion(view)
         }
-
         return view
     }
 
@@ -73,16 +69,14 @@ class GameFragmentActivity : Fragment() {
             view.tvFragmentScore.text = score.toString()
             view.tvquestionNumber.text = (counter + 1).toString() + "/" + questions.size.toString()
             view.rgOptions.orientation = LinearLayout.VERTICAL
-
-            for (i in questions[counter].options) {
-                val answerbtn = RadioButton(context)
-                answerbtn.id = View.generateViewId()
-                answerbtn.text = i
-                view.rgOptions.addView(answerbtn)
+            for (answer in questions[counter].options) {
+                val answerBtn = RadioButton(context)
+                answerBtn.id = View.generateViewId()
+                answerBtn.text = answer
+                view.rgOptions.addView(answerBtn)
             }
         } else {
             activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.frameLayoutFragment, QuizGameMainPage())?.commit()
         }
-
     }
 }

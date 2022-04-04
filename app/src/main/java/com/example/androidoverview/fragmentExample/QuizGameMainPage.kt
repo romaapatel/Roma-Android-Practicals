@@ -24,19 +24,14 @@ class QuizGameMainPage : Fragment() {
         view.btnStartGame.setOnClickListener {
             activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.frameLayoutFragment, GameFragmentActivity())?.commit()
         }
-
-        val result = "Your Score"
-
+        val result = R.string.your_score
         viewModel.getTotalQuestions().observe(viewLifecycleOwner, Observer {
             view.tvTotalScore.text = it.toString()
         })
-
         viewModel.getScore().observe(viewLifecycleOwner, Observer {
             view.tvTotalScore.text = view.tvTotalScore.text.toString() + "/" + it.toString()
         })
-
-        view.tvTotalScore.text = result
-
+        view.tvTotalScore.text = result.toString()
         return view
     }
 }

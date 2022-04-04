@@ -14,10 +14,10 @@ class ResultIntentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result_intent)
 
-        tvIntentFullName.text = intent.getStringExtra("firstName")+ " "+ intent.getStringExtra("lastName")
+        tvIntentFullName.text = intent.getStringExtra(R.string.first_name.toString())+ " "+ intent.getStringExtra(R.string.last_name.toString())
         btnFirstName.setOnClickListener {
             var intent = Intent(this,ResultSetterActivity::class.java)
-            intent.putExtra( "firstName", etIntentFirstName.text.toString())
+            intent.putExtra( R.string.first_name.toString(), etIntentFirstName.text.toString())
             startActivity(intent)
         }
     }

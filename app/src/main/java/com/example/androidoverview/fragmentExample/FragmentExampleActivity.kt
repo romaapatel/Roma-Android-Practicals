@@ -15,11 +15,10 @@ class FragmentExampleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment_example)
 
-        toggle = ActionBarDrawerToggle(this,drawerLayoutFragment , R.string.open, R.string.close)
+        toggle = ActionBarDrawerToggle(this@FragmentExampleActivity, drawerLayoutFragment, R.string.open, R.string.close)
         drawerLayoutFragment.addDrawerListener(toggle)
         toggle.syncState()
-
-        replaceFragment(QuizGameMainPage(),"Quiz Game")
+        replaceFragment(QuizGameMainPage(), R.string.quiz_name.toString())
     }
 
     private fun replaceFragment(fragment: Fragment, title: String) {

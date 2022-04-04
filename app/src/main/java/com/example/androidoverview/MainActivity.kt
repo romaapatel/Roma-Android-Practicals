@@ -14,7 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnChapterA.setOnClickListener {
-            val intent = Intent(this,RegistrationFormActivity::class.java)
+            val intent = Intent(this@MainActivity, RegistrationFormActivity::class.java)
+            startActivity(intent)
+        }
+        btnChapterD.setOnClickListener {
+            val intent = Intent(this@MainActivity, IntentAndFragmentActivity::class.java)
             startActivity(intent)
         }
         btnChapterD.setOnClickListener {
@@ -22,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnChapterB.setOnClickListener{
-            val intent = Intent(this,LayoutExampleActivity::class.java)
+            val intent = Intent(this@MainActivity, LayoutExampleActivity::class.java)
             startActivity(intent)
         }
     }
