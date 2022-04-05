@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeliciousFragmentActivity">
+
+    <TextView
+        android:id="@+id/tvDelicious"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="@string/delicious"
+        android:textAlignment="center"
+        android:textColor="@color/dark_pink"
+        android:textSize="@dimen/_25ssp" />
+
+    <ImageView
+        android:id="@+id/imageDelicious"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/no_image_warning" />
+
+</LinearLayout>
