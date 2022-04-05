@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidOverview">
         <activity
+            android:name=".ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WhatsAppUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerAndListExamplesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListExampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".LayoutExampleActivity"
             android:exported="false" />
         <activity

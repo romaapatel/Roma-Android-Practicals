@@ -26,5 +26,6 @@
     <color name="dark_pink">#581845</color>
     <color name="orange">#fca311</color>
     <color name="light_grey">#e5e5e5</color>
+    <color name="dark_cyan">#075e54</color>
     <color name="transparent">#00000000</color>
 </resources>
