@@ -72,6 +72,7 @@
     <string name="chapter_2a">Chapter 3(A)</string>
     <string name="profile">Profile</string>
     <string name="age">Age</string>
+    <string name="name">Name</string>
     <string name="contact">Contact</string>
     <string name="chapter_3_C">Chapter 3(C)</string>
     <string name="recycler_view_exmaple">Recycler View Example</string>
@@ -96,7 +97,6 @@
     <string name="constraint_layout">Constraint Layout Example</string>
     <string name="table_layout">Table Layout Example</string>
     <string name="time">Time</string>
-    <string name="name">Name</string>
     <string name="last_name">Last Name</string>
     <string name="show_time">Show time</string>
     <string name="email">Email</string>
