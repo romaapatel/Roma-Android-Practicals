@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_recycler_and_list_examples.btnList
 import kotlinx.android.synthetic.main.activity_recycler_and_list_examples.btnRecycler
+import kotlinx.android.synthetic.main.activity_recycler_and_list_examples.btnViewPager
 import kotlinx.android.synthetic.main.activity_recycler_and_list_examples.btnWhatsapp
 
 class RecyclerAndListExamplesActivity : AppCompatActivity() {
@@ -24,9 +25,9 @@ class RecyclerAndListExamplesActivity : AppCompatActivity() {
             val intent = Intent(this, WhatsAppUIActivity::class.java)
             startActivity(intent)
         }
-//        btnViewPager.setOnClickListener {
-//            val intent = Intent(this, ViewPagerActivity::class.java)
-//            startActivity(intent)
-//        }
+        btnViewPager.setOnClickListener {
+            val intent = Intent(this, ViewPagerActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
