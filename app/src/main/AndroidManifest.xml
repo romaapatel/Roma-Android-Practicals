@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidOverview">
         <activity
+            android:name=".fragmentExample.AnotherFlexibleUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intentexample.FlexibleUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intentexample.PendingIntentActivity"
+            android:exported="false" />
+        <activity
             android:name=".fragmentExample.FragmentExampleActivity"
             android:exported="false" />
         <activity
@@ -53,6 +62,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".intentexample.RecieverIntentClass" />
     </application>
 
 </manifest>

@@ -3,18 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/rules"
-            android:title="@string/rules_text"
-            android:iconTint="@color/white"/>
-
-        <item
-            android:id="@+id/aboutUs"
-            android:title="@string/about_us"
-            android:iconTint="@color/white"/>
-
-    </group>
+    <item
+        android:id="@+id/galleryMenu"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/gallery" />
+    <item
+        android:id="@+id/addMsgMenu"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="@string/add_message" />
+    <item
+        android:id="@+id/viewMsgMenu"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="@string/view_message" />
 
 </menu>

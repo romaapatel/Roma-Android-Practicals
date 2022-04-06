@@ -5,9 +5,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidoverview.R
 import com.example.androidoverview.fragmentExample.FragmentExampleActivity
+import kotlinx.android.synthetic.main.activity_intent_and_fragment.btnFlexibleUI
 import kotlinx.android.synthetic.main.activity_intent_and_fragment.btnFragmentWithData
 import kotlinx.android.synthetic.main.activity_intent_and_fragment.btnImplicitIntentExample
 import kotlinx.android.synthetic.main.activity_intent_and_fragment.btnIntentwithDataPassing
+import kotlinx.android.synthetic.main.activity_intent_and_fragment.btnPendingIntent
 
 class IntentAndFragmentActivity : AppCompatActivity() {
 
@@ -16,18 +18,24 @@ class IntentAndFragmentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_intent_and_fragment)
 
         btnImplicitIntentExample.setOnClickListener {
-            val intent = Intent(this, ImplicitIntentActivity::class.java)
+            val intent = Intent(this@IntentAndFragmentActivity, ImplicitIntentActivity::class.java)
             startActivity(intent)
         }
         btnIntentwithDataPassing.setOnClickListener {
-            val intentDataPassing = Intent(this,ResultIntentActivity::class.java)
+            val intentDataPassing = Intent(this@IntentAndFragmentActivity, ResultIntentActivity::class.java)
             startActivity(intentDataPassing)
         }
         btnFragmentWithData.setOnClickListener {
-            val intentFragment = Intent(this, FragmentExampleActivity::class.java)
+            val intentFragment = Intent(this@IntentAndFragmentActivity, FragmentExampleActivity::class.java)
             startActivity(intentFragment)
         }
-
-
+        btnPendingIntent.setOnClickListener {
+            val pendingIntent = Intent(this@IntentAndFragmentActivity, PendingIntentActivity::class.java)
+            startActivity(pendingIntent)
+        }
+        btnFlexibleUI.setOnClickListener {
+            val pendingIntent = Intent(this@IntentAndFragmentActivity, FlexibleUIActivity::class.java)
+            startActivity(pendingIntent)
+        }
     }
 }
