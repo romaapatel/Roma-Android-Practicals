@@ -1,4 +1,4 @@
-package com.example.androidoverview.intentexample
+package com.example.androidoverview.intentExample
 
 import android.content.Intent
 import android.net.Uri

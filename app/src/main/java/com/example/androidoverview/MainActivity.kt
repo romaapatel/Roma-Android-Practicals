@@ -3,7 +3,7 @@ package com.example.androidoverview
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidoverview.intentexample.IntentAndFragmentActivity
+import com.example.androidoverview.intentExample.IntentAndFragmentActivity
 import kotlinx.android.synthetic.main.activity_main.btnChapterA
 import kotlinx.android.synthetic.main.activity_main.btnChapterB
 import kotlinx.android.synthetic.main.activity_main.btnChapterD

@@ -12,25 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidOverview">
         <activity
+            android:name=".fragmentExample.AnotherFlexibleUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intentExample.FlexibleUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intentExample.PendingIntentActivity"
+            android:exported="false" />
+        <activity
             android:name=".fragmentExample.FragmentExampleActivity"
             android:exported="false" />
         <activity
-            android:name=".intentexample.ResultSetterActivity"
+            android:name=".intentExample.ResultSetterActivity"
             android:exported="false" />
         <activity
-            android:name=".intentexample.ResultIntentActivity"
+            android:name=".intentExample.ResultIntentActivity"
             android:exported="false" />
         <activity
-            android:name=".intentexample.ImplicitIntentActivity"
+            android:name=".intentExample.ImplicitIntentActivity"
             android:exported="false" >
-        <intent-filter>
-            <action android:name="android.intent.action.SEND" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <data android:mimeType="text/plain" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".intentexample.IntentAndFragmentActivity"
+            android:name=".intentExample.IntentAndFragmentActivity"
             android:exported="false" />
         <activity
             android:name=".LayoutExampleActivity"
@@ -53,6 +62,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".intentExample.RecieverIntentClass" />
     </application>
 
 </manifest>
