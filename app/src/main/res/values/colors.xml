@@ -7,6 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="raisin_black">#212525</color>
+    <color name="colorPrimary">#382BEE</color>
+    <color name="assent">#80FFC4</color>
+    <color name="dark_purple">#1F1C26</color>
+    <color name="dark_grayish_color">#2C273C</color>
+    <color name="dingy_dungeon">#C32A5E</color>
+    <color name="dark_grey">#808080</color>
+    <color name="rose">#FF1D49</color>
+    <color name="grey">#eeeeee</color>
+    <color name="rating_color">#FF1D49</color>
+    <color name="ofwhite_background">#FFF9C4</color>
     <color name="primary">#17B0EF</color>
     <color name="bright_cyan">#27d0dc</color>
     <color name="yellow">#ffff00</color>
@@ -15,4 +26,5 @@
     <color name="dark_pink">#581845</color>
     <color name="orange">#fca311</color>
     <color name="light_grey">#e5e5e5</color>
+    <color name="transparent">#00000000</color>
 </resources>

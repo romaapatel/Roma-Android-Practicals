@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintlayoutMovie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivHero"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/image_view"
+        android:scaleType="fitXY"
+        android:src="@drawable/beautybeast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:contentDescription="@string/no_image_warning"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHero"
+        app:layout_constraintStart_toStartOf="@id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/ivHero"
+        app:srcCompat="@drawable/beautybeastposter" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0466"/>
+
+    <TextView
+        android:id="@+id/tvMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/movie_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintStart_toEndOf="@+id/ivPoster"
+        app:layout_constraintTop_toBottomOf="@+id/ivHero" />
+
+    <TextView
+        android:id="@+id/tvMovieDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/movie_details"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivPoster"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle" />
+
+    <ImageButton
+        android:id="@+id/button_add_to_playlist"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:contentDescription="@string/no_image_warning"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHero"
+        app:srcCompat="@drawable/ic_round_bookmark_border_24" />
+
+    <Button
+        android:id="@+id/btnRent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:background="@color/rose"
+        android:text="@string/rent_movie"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuy"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toTopOf="@+id/barrierBottom" />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/rose"
+        android:text="@string/buy_movie"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalEnd"
+        app:layout_constraintStart_toEndOf="@+id/btnRent"
+        app:layout_constraintTop_toTopOf="@+id/barrierBottom" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvMovieDetails,ivPoster" />
+
+        <ImageView
+            android:id="@+id/ivFabStar"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/no_image_warning"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            android:src="@drawable/ic_baseline_stars_24"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/guidelineVerticalStart"
+            app:layout_constraintTop_toBottomOf="@+id/btnRent" />
+
+        <ImageView
+            android:id="@+id/ivFabType"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:clickable="true"
+            android:contentDescription="@string/no_image_warning"
+            android:focusable="true"
+            android:src="@drawable/ic_family"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/ivFabStar"
+            app:layout_constraintTop_toBottomOf="@+id/btnRent"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ivFabTomato"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:clickable="true"
+            android:contentDescription="@string/tomato_fab"
+            android:focusable="true"
+            android:src="@drawable/tomato"
+            app:backgroundTint="@color/ofwhite_background"
+            app:layout_constraintEnd_toStartOf="@+id/ivFabSimilar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivFabType"
+            app:layout_constraintTop_toBottomOf="@+id/btnRent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ivFabSimilar"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:clickable="true"
+            android:contentDescription="@string/similar_fab"
+            android:focusable="true"
+            android:src="@drawable/ic_similar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivFabTomato"
+            app:layout_constraintTop_toBottomOf="@+id/btnRent" />
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/rating_number"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivFabStar"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+            app:layout_constraintTop_toBottomOf="@+id/ivFabStar" />
+
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/family"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivFabType"
+            app:layout_constraintStart_toStartOf="@+id/ivFabType"
+            app:layout_constraintTop_toBottomOf="@+id/ivFabType" />
+
+        <TextView
+            android:id="@+id/tvTomatoRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/rating"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivFabTomato"
+            app:layout_constraintStart_toStartOf="@+id/ivFabTomato"
+            app:layout_constraintTop_toBottomOf="@+id/ivFabTomato" />
+
+        <TextView
+            android:id="@+id/tvSimiliarHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/similar_fab"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivFabSimilar"
+            app:layout_constraintStart_toStartOf="@+id/ivFabSimilar"
+            app:layout_constraintTop_toBottomOf="@+id/ivFabSimilar" />
+
+    <TextView
+        android:id="@+id/textview_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/movie_description"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalEnd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/ivFabStar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

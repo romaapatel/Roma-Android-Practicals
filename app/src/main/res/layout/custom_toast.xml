@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
-        android:drawableRight="@mipmap/ic_launcher"
-        android:text="Custom Toast"
+        android:drawableEnd="@mipmap/ic_launcher"
+        android:text="@string/custom_toast"
         android:textColor="@color/purple_200"
         android:textSize="@dimen/_20ssp"
         android:textStyle="bold" />
