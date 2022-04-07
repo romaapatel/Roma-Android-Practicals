@@ -4,8 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.btnChapterA
-import kotlinx.android.synthetic.main.activity_main.btnChapterC
 import kotlinx.android.synthetic.main.activity_main.btnChapterB
+import kotlinx.android.synthetic.main.activity_main.btnChapterC
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnChapterA.setOnClickListener {
-            val intent = Intent(this,RegistrationFormActivity::class.java)
+            val intent = Intent(this, RegistrationFormActivity::class.java)
             startActivity(intent)
         }
         btnChapterC.setOnClickListener{
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnChapterB.setOnClickListener{
-            val intent = Intent(this,LayoutExampleActivity::class.java)
+            val intent = Intent(this, LayoutExampleActivity::class.java)
             startActivity(intent)
         }
     }
