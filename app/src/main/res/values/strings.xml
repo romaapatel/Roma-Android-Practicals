@@ -102,4 +102,6 @@
     <string name="email">Email</string>
     <string name="instagram_title">Instagram</string>
     <string name="custom_toast">Custom Toast</string>
+    <string name="home_click">Home Clicked</string>
+    <string name="search_click">Search Clicked</string>
 </resources>
