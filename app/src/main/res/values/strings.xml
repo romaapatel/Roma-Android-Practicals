@@ -119,4 +119,6 @@
     <string name="architecture_chapter">architecture_chapter</string>
     <string name="something_went_wrong_on_api_side">Something Went Wrong on API SIde</string>
     <string name="something_went_wrong_on_device_side">Something Went Wrong on Device Side</string>
+    <string name="full_name">%s + %s</string>
+    <string name="error">Error</string>
 </resources>

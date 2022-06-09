@@ -13,9 +13,13 @@ import kotlinx.android.synthetic.main.recycler_user_item.view.ivUserImage
 import kotlinx.android.synthetic.main.recycler_user_item.view.tvUserEmail
 import kotlinx.android.synthetic.main.recycler_user_item.view.tvUserName
 
-class UsersAdapter(val context: Context, private var users: List<User>) :
+class UsersAdapter(val context: Context, private var usersArray: List<User>) :
     RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
 
+    fun setUsers(users: List<User>) {
+        this.usersArray = users
+        notifyDataSetChanged()
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.recycler_user_item, parent, false)
         return ViewHolder(view)
@@ -24,17 +28,16 @@ class UsersAdapter(val context: Context, private var users: List<User>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         holder.apply {
-            with (users[position]) {
+            with (usersArray[position]) {
                 loadCircleImage(avatar, userImage)
-                userName.text = first_name + last_name
+                userName.text = context.getString(R.string.full_name,first_name,last_name)
                 userEmail.text = email
             }
         }
-
     }
 
     override fun getItemCount(): Int {
-        return users.size
+        return usersArray.size
     }
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
