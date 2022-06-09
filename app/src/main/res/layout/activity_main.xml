@@ -41,4 +41,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnChapterB"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnArchitectureChapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:background="@drawable/ripple_effect_button"
+        android:text="@string/architecture_chapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChapterD"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

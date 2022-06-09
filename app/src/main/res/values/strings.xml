@@ -113,4 +113,10 @@
     <string name="your_score">Your score</string>
     <string name="share_via">Share Via</string>
     <string name="slash"> </string>
+    <string name="mvc">MVC</string>
+    <string name="mvp">MVP</string>
+    <string name="mvvm">MVVM</string>
+    <string name="architecture_chapter">architecture_chapter</string>
+    <string name="something_went_wrong_on_api_side">Something Went Wrong on API SIde</string>
+    <string name="something_went_wrong_on_device_side">Something Went Wrong on Device Side</string>
 </resources>

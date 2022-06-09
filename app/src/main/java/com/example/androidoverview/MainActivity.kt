@@ -3,7 +3,9 @@ package com.example.androidoverview
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.androidoverview.architecture.MVCArchitectureActivity
 import com.example.androidoverview.intentExample.IntentAndFragmentActivity
+import kotlinx.android.synthetic.main.activity_main.btnArchitectureChapter
 import kotlinx.android.synthetic.main.activity_main.btnChapterA
 import kotlinx.android.synthetic.main.activity_main.btnChapterB
 import kotlinx.android.synthetic.main.activity_main.btnChapterD
@@ -26,6 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         btnChapterB.setOnClickListener{
             val intent = Intent(this@MainActivity, LayoutExampleActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnArchitectureChapter.setOnClickListener {
+            val intent = Intent(this@MainActivity, MVCArchitectureActivity::class.java)
             startActivity(intent)
         }
     }
