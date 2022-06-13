@@ -8,4 +8,8 @@ object Constant {
     const val LOCATION = "geo:0,0?q="
     const val SHARE_VIA = "Share Via"
     const val TEL = "tel:"
+    const val THREE = 3
+    const val CAMERA = "Camera"
+    const val THOUSAND = 1000
+    const val DATA = "Data"
 }
