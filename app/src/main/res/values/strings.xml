@@ -113,4 +113,21 @@
     <string name="your_score">Your score</string>
     <string name="share_via">Share Via</string>
     <string name="slash"> </string>
+    <string name="pending_intent">Pending Intent</string>
+    <string name="time_seconds">Enter Time in Seconds</string>
+    <string name="chapter_description">Chapter Description</string>
+    <string name="flexible_ui">Flexible Ui</string>
+    <string-array name="description_array">
+        <item> Ahmedabad is located near the banks of the Sabarmati River, 25 km (16 mi) from the capital of Gujarat, Gandhinagar, also known as its twin city</item>
+        <item>Surat is one of the cleanest city of India and is also known by several other names like "THE SILK CITY", "THE DIAMOND CITY", "THE GREEN CITY", etc. It has the most vibrant present and an equally varied heritage of the past. It is the city where the British first land in India.</item>
+        <item>Rajkot is the 6th cleanest city of India, and it is the 7th fastest-growing city in the world as of March 2021 </item>
+        <item>Vadodara, also known as Baroda, is the second-largest city in the Indian state of Gujarat.</item>
+        <item>It is administered by Anand Municipality. It is part of the region known as Charotar, consisting of Anand and Kheda districts. Anand is known as Milk Capital of India.</item>
+        <item>It is administered by Anand Municipality. It is part of the region known as Charotar, consisting of Anand and Kheda districts. Anand is known as Milk Capital of India.</item>
+    </string-array>
+    <string name="gallery">Gallery</string>
+    <string name="add_message">Add Message</string>
+    <string name="view_message">View Message</string>
+    <string name="nothing_selected">Nothing Selected</string>
+    <string name="wake_up">Wake UP</string>
 </resources>

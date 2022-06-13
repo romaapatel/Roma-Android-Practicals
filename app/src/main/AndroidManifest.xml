@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidOverview">
         <activity
+            android:name=".intentExample.PendingIntentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intentExample.FlexibleUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentExample.AnotherFlexibleUIActivity"
+            android:exported="false" />
+        <activity
             android:name=".fragmentExample.FragmentExampleActivity"
             android:exported="false" />
         <activity
@@ -23,11 +32,11 @@
         <activity
             android:name=".intentExample.ImplicitIntentActivity"
             android:exported="false" >
-        <intent-filter>
-            <action android:name="android.intent.action.SEND" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <data android:mimeType="text/plain" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".intentExample.IntentAndFragmentActivity"
