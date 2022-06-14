@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidoverview">
-
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -40,6 +38,21 @@
         </activity>
         <activity
             android:name=".intentExample.IntentAndFragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WhatsAppUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerAndListExamplesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListExampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewActivity"
             android:exported="false" />
         <activity
             android:name=".LayoutExampleActivity"

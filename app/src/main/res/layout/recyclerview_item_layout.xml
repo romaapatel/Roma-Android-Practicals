@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20sdp"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardMaxElevation="@dimen/_20sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue">
+
+        <ImageView
+            android:id="@+id/imageViewRowFile"
+            android:layout_width="@dimen/_95sdp"
+            android:layout_height="@dimen/_95sdp"
+            android:src="@drawable/female"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@id/imageViewRowFile"
+            android:text="@string/name"
+            android:textSize="@dimen/_16ssp"
+            android:textAlignment="center"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/light_grey"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@id/imageViewRowFile"
+            android:text="@string/age"
+            android:textSize="@dimen/_16ssp"
+            android:textAlignment="center"
+            android:textColor="@color/light_grey"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@id/imageViewRowFile"
+            android:text="@string/contact"
+            android:textSize="@dimen/_16ssp"
+            android:textAlignment="center"
+            android:textColor="@color/light_grey"
+            app:layout_constraintTop_toBottomOf="@id/tvAge" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
